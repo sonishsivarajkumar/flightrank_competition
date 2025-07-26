@@ -9,7 +9,7 @@ This repository contains a comprehensive **Python scripts solution** for the Fli
 - **Challenge**: Group-wise ranking problem with 150K+ search sessions
 - **Prize Pool**: $10,000 with bonus for HitRate@3 ≥ 0.7
 
-## 🚀 Quick Start (Optimized Python Solution)
+## Quick Start (Optimized Python Solution)
 
 ### 1. Download Competition Data
 
@@ -43,7 +43,7 @@ python main.py --use-cv --ensemble
 
 ## What's Included
 
-### 📊 Complete Python Solution Pipeline
+### Complete Python Solution Pipeline
 1. **Data Loading & EDA**: Fast parquet loading and comprehensive analysis (`data_loader.py`)
 2. **Feature Engineering**: 50+ optimized features with memory management (`feature_engineering.py`) 
 3. **Model Training**: LightGBM + CatBoost ranking models with hyperparameter optimization (`model_trainer.py`)
@@ -51,7 +51,7 @@ python main.py --use-cv --ensemble
 5. **Main Pipeline**: End-to-end execution with timing and performance tracking (`main.py`)
 6. **Quick Start**: One-command execution for immediate results (`quick_start.py`)
 
-### 🔍 Key Features Created
+### Key Features Created
 - **Time-based**: Request hour, day of week, departure timing, business hours
 - **Route complexity**: Number of segments, connections, layover analysis
 - **User preferences**: Frequent flyer alignment, VIP status, booking independence
@@ -60,7 +60,7 @@ python main.py --use-cv --ensemble
 - **Pricing**: Price per hour, tax ratios, penalty analysis
 - **Policy compliance**: Corporate travel policy adherence
 
-### 🤖 Models Implemented
+### Models Implemented
 - **LightGBM Ranking**: Main model with lambdarank objective and optimized hyperparameters
 - **CatBoost**: Alternative ranking algorithm with RMSE + ranking support
 - **Ensemble methods**: Weighted averaging of multiple model predictions
@@ -85,7 +85,7 @@ python main.py --use-cv --ensemble
 └── jsons_raw.tar.kaggle             # Raw JSON data (optional, 50GB+)
 ```
 
-## 🏃‍♂️ Running the Solution
+## Running the Solution
 
 ### Option 1: Quick Test (Recommended for testing)
 ```bash
@@ -110,11 +110,11 @@ python json_to_parquet_converter.py
 python simple_solution.py
 ```
 
-## 📁 File Structure (Updated)
+## File Structure (Updated)
 
 ```
 .
-├── simple_solution.py               # Quick solution runner (TESTED ✅)
+├── simple_solution.py               # Quick solution runner (TESTED)
 ├── production_solution.py           # Full production pipeline 
 ├── json_to_parquet_converter.py     # Convert JSON data to parquet
 ├── simple_features.py               # Robust feature engineering
@@ -128,36 +128,36 @@ python simple_solution.py
 ├── train.parquet                    # Training data (generated from JSON)
 ├── test.parquet                     # Test data (generated from JSON)
 ├── sample_submission.parquet        # Submission format
-├── submission.csv                   # Generated submission file ✅
+├── submission.csv                   # Generated submission file
 └── json_samples/                    # Raw JSON data (150K+ files)
 ```
 
 ## Competition Strategy
 
-### Phase 1: Foundation (✅ **COMPLETED & TESTED**)
-- ✅ Data loading and exploration with memory optimization
-- ✅ JSON to Parquet conversion pipeline (150K+ files)
-- ✅ Robust feature engineering (22 features)
-- ✅ LightGBM ranking model with optimized hyperparameters
-- ✅ Proper GroupKFold validation setup  
-- ✅ HitRate@3 metric implementation
-- ✅ Submission generation pipeline
-- ✅ Performance monitoring and optimization
-- ✅ **TESTED ON REAL DATA: 0.9797 HitRate@3**
+### Phase 1: Foundation (COMPLETED & TESTED)
+- Data loading and exploration with memory optimization
+- JSON to Parquet conversion pipeline (150K+ files)
+- Robust feature engineering (22 features)
+- LightGBM ranking model with optimized hyperparameters
+- Proper GroupKFold validation setup  
+- HitRate@3 metric implementation
+- Submission generation pipeline
+- Performance monitoring and optimization
+- **TESTED ON REAL DATA: 0.9797 HitRate@3**
 
-### Phase 2: Production Ready (✅ **IMPLEMENTED**)
-- ✅ Full dataset processing pipeline
-- ✅ Robust error handling for mixed data types
-- ✅ Memory-efficient processing for large datasets
-- ✅ Production script with command-line options
-- ✅ Feature importance analysis
-- ✅ Comprehensive logging and monitoring
+### Phase 2: Production Ready (IMPLEMENTED)
+- Full dataset processing pipeline
+- Robust error handling for mixed data types
+- Memory-efficient processing for large datasets
+- Production script with command-line options
+- Feature importance analysis
+- Comprehensive logging and monitoring
 
 ### Phase 3: Fine-tuning
-- 🔄 Feature selection
-- 🔄 Business logic integration
-- 🔄 Validation strategy refinement
-- 🔄 Leaderboard analysis
+- Feature selection
+- Business logic integration
+- Validation strategy refinement
+- Leaderboard analysis
 
 ## Key Insights
 
@@ -175,7 +175,7 @@ Based on competition discussion and our baseline analysis:
 - **Our ensemble solution**: Expected 0.45-0.60 HitRate@3
 - **Top solutions target**: 0.60+ HitRate@3 (for bonus prize)
 
-## 🔧 Advanced Features Available
+## Advanced Features Available
 
 Our solution includes optional advanced techniques:
 - **Target encoding**: Smoothed encoding for high-cardinality features
@@ -185,7 +185,7 @@ Our solution includes optional advanced techniques:
 - **External data**: Global Airports dataset integration
 - **Memory optimization**: Efficient processing for large datasets
 
-## 🚀 Getting Started Now
+## Getting Started Now
 
 1. **Download data**: Get the competition files from Kaggle (or use existing JSON data)
 2. **Convert data** (if using JSON): Run `python json_to_parquet_converter.py`  
@@ -193,16 +193,16 @@ Our solution includes optional advanced techniques:
 4. **Execute**: Run `python simple_solution.py` for immediate results
 5. **Submit**: Upload the generated `submission.csv` to Kaggle
 
-## ✅ Current Status
+## Current Status
 
-**SOLUTION SUCCESSFULLY TESTED AND WORKING!**
+**SOLUTION SUCCESSFULLY TESTED AND WORKING**
 
-- ✅ JSON to Parquet conversion completed (1,000 files sample)
-- ✅ Feature engineering pipeline working  
-- ✅ LightGBM ranking model trained successfully
-- ✅ Cross-validation completed: **HitRate@3 = 0.9797 ± 0.0076**
-- ✅ Submission file generated and validated
-- ✅ Ready for full dataset and Kaggle submission
+- JSON to Parquet conversion completed (1,000 files sample)
+- Feature engineering pipeline working  
+- LightGBM ranking model trained successfully
+- Cross-validation completed: **HitRate@3 = 0.9797 ± 0.0076**
+- Submission file generated and validated
+- Ready for full dataset and Kaggle submission
 
 ### Recent Test Results
 - **CV Score**: 0.9797 ± 0.0076 HitRate@3 
@@ -232,4 +232,4 @@ This project is for educational and competition purposes. Please respect Kaggle'
 
 ---
 
-Good luck and safe travels! ✈️🏆
+Good luck and safe travels!
